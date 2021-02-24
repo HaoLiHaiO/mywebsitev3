@@ -36,13 +36,13 @@
       </div>
       <nav id="navigation" class="nav">
         <i id="theme" class="fas fa-adjust navelements"></i>
-        <a href="#home" class="navelements">Home</a>
-        <a href="#web" class="navelements">Web</a>
-        <a href="#translation" class="navelements">Translation</a>
-        <a href="#projects" class="navelements">Projects</a>
-        <a href="#blog" class="navelements">Blog</a>
-        <a href="#about" class="navelements">About</a>
-        <a href="#contact" class="navelements">Contact</a>
+        <a href="#home" class="navelements" aria-label="Link to home">Home</a>
+        <a href="#web" class="navelements" aria-label="Web section">Web</a>
+        <a href="#translation" class="navelements" aria-label="Translation section">Translation</a>
+        <a href="#projects" class="navelements" aria-label="Projects section">Projects</a>
+        <a href="#blog" class="navelements" aria-label="Blog section">Blog</a>
+        <a href="#about" class="navelements" aria-label="About me section">About me</a>
+        <a href="#contact" class="navelements" aria-label="Contact section">Contact</a>
       </nav>
 
 
@@ -54,29 +54,109 @@
           
 
           <picture id="homepic">
-            <source id="mewebp" srcset="/assets/images/medarktoosmall.webp" type="image/webp" width="198px" height="160px">
-            <source id="mejpg" srcset="/assets/images/medarktoosmall.jpeg" type="image/jpeg" width="198px" height="160px"> 
+            <source id="mewebp" srcset="/assets/images/medarktoosmall.webp" type="image/webp" width="198px" height="160px" alt="My funky portrait!" >
+            <source id="mejpg" srcset="/assets/images/medarktoosmall.jpeg" type="image/jpeg" width="198px" height="160px" alt="My funky portrait!"> 
             <img id="meimg" src="/assets/images/medarktoosmall.jpeg" alt="My funky portrait!" width="198px" height="160px" >
           </picture>
         </div>
         
         <h2 id="intro">Hi, I'm Alex, a web developer and technical translator.</h3>
+          <div class="arrowwrapper"><a href="#web" aria-label="To first section, web development"><i class="fas fa-chevron-down down"></i></a> </div>
       </div>
     </header>
     <main class="mainwrapper">
       <section id="web">
 
         <h2 class="web">Web Development</h2>
-        <p class="webparagraphs"></p>
+        <i class="fab fa-dev icons"></i>
+        <p>First of all, don't forget to toggle the light theme if you prefer. It's available in the menu.</p>
+        <h3 class="subtitle">Front-of-the-front-end</h3>
+          <p class="paragraph">I am a proficient front-of-the-front-end developer. Never heard of that term? Check out this <a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" class="links" aria-label="Article by Brad Frost">great article</a>, called front-of-the-front-end and back-of-the-front-end web development, by Brad Frost. I love working with designs and converting their designs, sketches, mockups and drawings with HTML markup, CSS and Javascript (JS) to code accessible, fully responsive and SEO-friendly websites from scratch. </p>
+
+          <p class="paragraph">I am also obsessed with getting the highest Lighthouse scores. Of course, we have to be careful, having a perfect lighthouse score doesn't mean everything is perfect. It's even possible to get perfect Lighthouse scores with completely inacessible and non-optimized websites as Manuel Matuzovic showed in <a href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/" class="links" aria-label="Link to an article by Manuel Matuzovic">an article</a> in 2019.</p>
+
+        <h3 class="subtitle">Back-of-the-front-end</h3>
 
 
+          <p>As a front end developer, I also like back-of-the-front-end development. For example, seeing everything that is possible with APIs is something that fascinates me. Being able to work with data from NASA or Microsoft is an absolutely delightful experience. Want to know what time it is on Mars, what the temperature is over there or just see a random picture related to space exploration? Easy and fun with NASA's APIs! Handling things like CRUD functionality or controlling application states are things I do. </p>
+
+          
+
+          <h3 class="subtitle">UI/UX Design</h3>
+
+          <p>Having a good knowledge of UI/UX principles is essential as a front-end developer, and even as a developer in general. I love original and innovative designs, things you don't see everywhere else. Adapting those designs for them to work on all devices is something that I find really fun because I love solving problems.</p>
+
+          <h3 class="subtitle">Back-end</h3>
+
+          <p>I also enjoy working with back end developers and creating applications that are as optimal as possible. I have experience with back end development myself. I have played around with databases using MongoDB, MySQL and Sqlite as well as the back end web application framework for Node.js, Express.js. I think it is important to understand the basics of back end development as a front end developer. However, one should not forget that trying to excel at everything is not really a feasible goal, as pointed out by Anand Safi in  <a href="https://hackernoon.com/on-spreading-yourself-too-thin-and-other-dev-career-reflections-qs4s33t3" class="links" aria-label="Article written by Anand Safi and published on Hackernoon">an article published on Hackernoon</a>.</p>
+
+
+          <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+          
       </section>
-      <section id="translation"></section>
-      <section id="projects"></section>
-      <section id="blog"></section>
-      <section id="about"></section>
-      <section id="contact"></section>
+      <section id="translation">
+        <h2>Translation</h2>
+        <i class="fas fa-language icons"></i>
+        <p>I'm a technical translator. I've been working as a freelance translator, editor and proofreader for over ten years. I translate from Chinese, English, French and German into French and English. I have three master's degrees, including one in linguistics.</p>
+
+        <p><span class="quotes">“Without translation, I would be limited to the borders of my own country. The translator is my most important ally. He introduces me to the world.”
+        </span> – Italo Calvino</p>
+
+        <p>Being bilingual doesn't mean being a good translator. A translator needs to understand the technical aspects and all related linguistic concepts. Attention to details, a deep knowledge of the topic and precision are essential skills if one wants to convey a message as accurately as possible. An advanced understanding of a language and its mechanisms are what enables a translator to create nuanced and meaningful translations.</p>
+
+        <p>Fields in which I work: 
+          <ul class="lists">
+            <li>Physics, mathematics and computer science</li>
+            <li>Social sciences and humanities</li>
+            <li>Trade and business</li>
+            <li>Politics and international relations</li>
+            <li>Video games</li>
+          </ul>
+        </p>
+        <p>My clients include: 
+          <ul class="lists">
+            <li>Agencies</li>
+            <li>Individuals</li>
+            <li>Businesses</li>
+            <li>NGOs</li>
+            <li>Laboratories, research departments and professors</li>
+          </ul>
+        </p>
+
+        <p>For more information and testimonials, feel free to have a look at my <a href="https://www.upwork.com/fl/alexandrepinel" class="links">Upwork profile </a>.</p>
+        <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <i class="fas fa-briefcase icons"></i>
+        <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+      </section>
+      <section id="blog">
+        <h2>Blog</h2>
+        <i class="fas fa-blog icons"></i>
+        <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <i class="fas fa-user-friends icons"></i>
+        <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+      </section>
+      <section id="contact">
+        <h2>Say Hello!</h2>
+        <i class="far fa-id-card icons"></i>
+
+        <p>Feel free to write to me in German, English, French or Chinese. 😄</p>
+
+        
+
+        <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
+      </section>
     </main>
+
+    <footer>
+      <p><a href="https://twitter.com/HereticRamza" class="links" aria-label="Link to my Twitter profile"><i class="fab fa-twitter footericons"></i></a> || <a href="https://www.linkedin.com/in/alexandre-pinel-045807128/" class="links" aria-label="Link to my LinkedIn profile"><i class="fab fa-linkedin-in footericons"></i></a> || <a href="https://github.com/HaoLiHaiO" class="links" aria-label="Link to my Github profile"><i class="fab fa-github-alt footericons"></i></a> || <a href="https://www.upwork.com/fl/alexandrepinel" class="links" aria-label="Link to Upwork profile"><img id="upworkicon" class="footericons" src="assets/images/upwork-tile.svg" alt="Upwork icon link" width="10px" height="10px" ></a></p>
+      <p>Designed and created by <a href="https://www.alexandrepinel.com" class="links" aria-label="Link to this very page">Alexandre Pinel &#169 2021</a></p>
+      </footer>
 
     <script src="assets/js/script.js" defer></script>
   </body>

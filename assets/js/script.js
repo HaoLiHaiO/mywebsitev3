@@ -1,3 +1,5 @@
+// THEME AND NAVBAR CONFIG
+
 const burgermenu = document.getElementById("burgerbutton");
 const closeicon = document.getElementById("closeicon");
 const nav = document.getElementById("navigation");
@@ -8,6 +10,13 @@ const navelements = document.querySelectorAll(".navelements");
 const homepicwebp = document.getElementById("mewebp");
 const homepicjpg = document.getElementById("mejpg");
 const meimg = document.getElementById("meimg");
+const downarrows = document.querySelectorAll(".down");
+const uparrows = document.querySelectorAll(".up");
+const sections = document.querySelectorAll("section");
+const allothericons = document.querySelectorAll(".icons");
+const links = document.querySelectorAll(".links");
+const footer = document.querySelector("footer");
+const upworkicon = document.getElementById("upworkicon");
 
 burgermenu.addEventListener("click", () => {
   burgermenu.classList.remove("show");
@@ -41,6 +50,28 @@ theme.addEventListener("click", () => {
   navelements.forEach((element) => {
     element.classList.toggle("light");
   });
+
+  downarrows.forEach((element) => {
+    element.classList.toggle("light");
+  });
+
+  sections.forEach((element) => {
+    element.classList.toggle("light");
+  });
+
+  uparrows.forEach((element) => {
+    element.classList.toggle("light");
+  });
+
+  allothericons.forEach((element) => {
+    element.classList.toggle("light");
+  });
+
+  links.forEach((element) => {
+    element.classList.toggle("light");
+  });
+
+  footer.classList.toggle("light");
 
   homepicwebp.classList.toggle("light");
   homepicjpg.classList.toggle("light");
