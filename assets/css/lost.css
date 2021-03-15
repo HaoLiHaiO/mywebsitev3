@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 72px;
+  color: #d6d2c4;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background: url("../images/lost.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-weight: bold;
+}
+
+.lost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4%;
+}
+
+.container {
+  background-color: #ffc845;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.container:hover {
+  background-color: #00000f;
+  transition: 0.4s linear;
+}
+
+a:hover {
+  color: #ffc845;
+  transition: 0.4s linear;
+}
+
+a {
+  color: #00000f;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.3em;
+  }
+}

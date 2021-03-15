@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"  content="Need a front-end developer or a technical translator? Great, I am both. Let’s make things happen! Let’s discuss and plan your project together.">
     <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="web developer front-end translation French">
+    <meta name="author" content="Alexandre Pinel">
 
 
 
@@ -47,7 +49,7 @@
 
 
       <div id="hometext" class="toptext">
-        <h1 id="name">Alexandre Pinel</h1>
+        <h1 id="myname">Alexandre Pinel</h1>
         <div class="myimg">
 
           <!-- <img src="/assets/images/medarktoo.jpeg" alt="my funky portrait" /> -->
@@ -71,7 +73,7 @@
         <i class="fab fa-dev icons"></i>
         <p>First of all, don't forget to toggle the light theme if you prefer. It's available in the menu.</p>
         <h3 class="subtitle">Front-of-the-front-end</h3>
-          <p class="paragraph">I am a proficient front-of-the-front-end developer. Never heard of that term? Check out this <a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" class="links" aria-label="Article by Brad Frost">great article</a>, called front-of-the-front-end and back-of-the-front-end web development, by Brad Frost. I love working with designs and converting their designs, sketches, mockups and drawings with HTML markup, CSS and Javascript (JS) to code accessible, fully responsive and SEO-friendly websites from scratch. </p>
+          <p class="paragraph">I am a proficient front-of-the-front-end developer. Never heard of that term? Check out this <a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" class="links" aria-label="Article by Brad Frost">great article</a>, called front-of-the-front-end and back-of-the-front-end web development, by Brad Frost. I love working with designers and converting their designs, sketches, mockups and drawings with HTML markup, CSS and Javascript (JS) to code accessible, fully responsive and SEO-friendly websites from scratch. </p>
 
           <p class="paragraph">I am also obsessed with getting the highest Lighthouse scores. Of course, we have to be careful, having a perfect lighthouse score doesn't mean everything is perfect. It's even possible to get perfect Lighthouse scores with completely inacessible and non-optimized websites as Manuel Matuzovic showed in <a href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/" class="links" aria-label="Link to an article by Manuel Matuzovic">an article</a> in 2019.</p>
 
@@ -79,6 +81,26 @@
 
 
           <p>As a front end developer, I also like back-of-the-front-end development. For example, seeing everything that is possible with APIs is something that fascinates me. Being able to work with data from NASA or Microsoft is an absolutely delightful experience. Want to know what time it is on Mars, what the temperature is over there or just see a random picture related to space exploration? Easy and fun with NASA's APIs! Handling things like CRUD functionality or controlling application states are things I do. </p>
+
+          <h3>Technologies I use for work: </h3>
+          <p> 
+            <ul class="lists">
+              <li>HTML</li>
+              <li>CSS (experience with SASS/SCSS)</li>
+              <li>Javascript (and React)</li>
+              <li>Node.js</li>
+            </ul>
+          </p>
+
+          <p>I have full stack development experience as well with: 
+
+            <ul class="lists">
+              <li>MongoDB</li>
+              <li>Sqlite</li>
+              <li>MySQL</li>
+              <li>Express.js</li>
+            </ul>
+          </p>
 
           
 
@@ -129,16 +151,22 @@
       <section id="projects">
         <h2>Projects</h2>
         <i class="fas fa-briefcase icons"></i>
+        <p>You can see my projects <a href="projects/" class="links" aria-label="Link to my portfolio page">here</a>.</p>
         <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
       </section>
       <section id="blog">
         <h2>Blog</h2>
         <i class="fas fa-blog icons"></i>
+        <p>I'm currently working on this section. Stay tuned!</p>
         <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
       </section>
       <section id="about">
         <h2>About</h2>
         <i class="fas fa-user-friends icons"></i>
+        <p>I have always been interested in computer science and languages. I started coding in the 90's before CSS even existed. I grew up speaking German, French and English. I studied computer science with applied mathematics briefly and then I decided to study something else while keeping on coding at home as I had always done. I first studied international relations and linguistics and then I obtained three master's degrees. I have a master's degree in linguistics, one in German studies and one in cross-border cooperation and communication.</p>
+        <p>I love learning new things and developing my existing skills and keeping up-to-date with new technologies and new scientific discoveries. In my free time, I like reading about space exploration, mathematics, computer science, quantum development and linguistics.</p>
+        <p>I mainly focus on mobile-first, SEO-friendly, accessible and responsive web apps and websites but I also love experimenting in my free time and I have had the opportunity to play around with several programming and scripting languages such as C#, Python, C, C++, LISP and Haskell. We used Java and OCAML at university.</p>
+        <p>I also love outdoor activities as hiking, swimming, playing golf and tennis. Let's chat! 😊</p>
         <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
       </section>
       <section id="contact">
@@ -147,7 +175,30 @@
 
         <p>Feel free to write to me in German, English, French or Chinese. 😄</p>
 
+        <div class="contactcontainer">
+          
+
+		
+		
+
+          <form action="handler.php" method="post" id="reused_form" >
+            <label for="name">Your Name:</label><br>
+            <input id="name" type="text" name="Name" required maxlength="50"><br>
+            <label for="email">Email Address:</label><br>
+            <input id="email" type="email" name="Email" required maxlength="50"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea><br>
+            
+            
+    
+            <button class="btn" type="submit" id="submitbtn">Submit</button>
+          </form>
+        </div>
         
+
+ 
+
+  
 
         <a href="#home" aria-label="Back to top"><i class="fas fa-chevron-up up"></i></a>
       </section>
@@ -157,7 +208,7 @@
       <p><a href="https://twitter.com/HereticRamza" class="links" aria-label="Link to my Twitter profile"><i class="fab fa-twitter footericons"></i></a> || <a href="https://www.linkedin.com/in/alexandre-pinel-045807128/" class="links" aria-label="Link to my LinkedIn profile"><i class="fab fa-linkedin-in footericons"></i></a> || <a href="https://github.com/HaoLiHaiO" class="links" aria-label="Link to my Github profile"><i class="fab fa-github-alt footericons"></i></a> || <a href="https://www.upwork.com/fl/alexandrepinel" class="links" aria-label="Link to Upwork profile"><img id="upworkicon" class="footericons" src="assets/images/upwork-tile.svg" alt="Upwork icon link" width="10px" height="10px" ></a></p>
       <p>Designed and created by <a href="https://www.alexandrepinel.com" class="links" aria-label="Link to this very page">Alexandre Pinel &#169 2021</a></p>
       </footer>
-
+    
     <script src="assets/js/script.js" defer></script>
   </body>
 </html>

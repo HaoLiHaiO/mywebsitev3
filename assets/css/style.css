@@ -63,6 +63,17 @@ body {
   cursor: pointer;
 }
 
+#burgerbutton:hover,
+#closeicon:hover {
+  color: #1d4289;
+  transition: 0.4s linear;
+}
+
+.navelements:hover {
+  color: #1d4289;
+  transition: 0.4s linear;
+}
+
 #closeicon {
   font-size: 30px;
 
@@ -252,6 +263,10 @@ body {
   color: var(--black);
 }
 
+.navelements.light:hover {
+  color: #1d4289;
+}
+
 #meimg.light {
   border: 1px solid var(--black);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -297,13 +312,6 @@ section.light {
   color: var(--black);
 }
 
-/*
-#web {
-  height: 100%;
-  width: 100%;
-}
-*/
-
 .icons {
   font-size: 2em;
 }
@@ -331,6 +339,51 @@ section.light {
   padding-left: 1em;
 }
 
+/*
+  CONTACT FORM 
+*/
+
+.contactcontainer {
+  display: flex;
+  font-size: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+.contactcontainer > * {
+  margin: 0;
+}
+
+#name,
+#email,
+#verification {
+  height: 2em;
+  width: 75%;
+}
+
+#submitbtn {
+  width: 50%;
+  border-radius: 20px;
+  line-height: 20px;
+  box-shadow: var(--white);
+  font-size: 0.4em;
+}
+
+#submitbtn:hover {
+  background-color: #1d4289;
+  transition: 0.4s linear;
+}
+
+#subject {
+  height: 5em;
+}
+
+/*
+  FOOTER
+*/
+
 footer {
   display: flex;
   flex-direction: column;
@@ -354,32 +407,32 @@ footer.light {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #burgerbutton {
-    font-size: 52px;
+    font-size: 2em;
 
     cursor: pointer;
   }
 
   #closeicon {
-    font-size: 52px;
+    font-size: 2em;
 
     cursor: pointer;
     display: none;
   }
 
   #theme {
-    font-size: 52px;
+    font-size: 2em;
   }
 
   .toptext {
-    font-size: 36px;
+    font-size: 1.5em;
   }
 
   .navelements {
-    font-size: 52px;
+    font-size: 2em;
   }
 
   section {
-    font-size: 24px;
+    font-size: 1em;
     padding: 2%;
   }
 
@@ -388,14 +441,190 @@ footer.light {
   }
 
   footer {
-    font-size: 48px;
+    font-size: 1.5em;
+  }
+
+  /* FOOTER */
+
+  .contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    font-size: 2em;
+  }
+
+  .contactcontainer > * {
+    margin: 0;
+  }
+
+  #name,
+  #email,
+  #verification,
+  #message {
+    width: 75%;
+    height: 3em;
+  }
+
+  #submitbtn {
+    width: 50%;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: var(--white);
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  #burgerbutton {
+    font-size: 3em;
+
+    cursor: pointer;
+  }
+
+  #closeicon {
+    font-size: 3em;
+
+    cursor: pointer;
+    display: none;
+  }
+
+  #theme {
+    font-size: 3em;
+  }
+
+  .toptext {
+    font-size: 2em;
+  }
+
+  .navelements {
+    font-size: 3em;
+  }
+
+  section {
+    font-size: 2em;
+    padding: 2%;
+  }
+
+  section > * {
+    margin: 5%;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+
+  /* FOOTER */
+
+  .contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    font-size: 1em;
+  }
+
+  .contactcontainer > * {
+    margin: 0;
+  }
+
+  #name,
+  #email,
+  #verification,
+  #message {
+    width: 50vh;
+    height: 3em;
+  }
+
+  #submitbtn {
+    width: 50%;
+    height: 4em;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: var(--white);
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #burgerbutton {
+    font-size: 2em;
+
+    cursor: pointer;
+  }
+
+  #closeicon {
+    font-size: 2em;
+
+    cursor: pointer;
+    display: none;
+  }
+
+  #theme {
+    font-size: 2em;
+  }
+
+  .toptext {
+    font-size: 2em;
+  }
+
+  .navelements {
+    font-size: 1.5em;
+  }
+
+  section {
+    font-size: 1em;
+    padding: 2em;
+  }
+
+  section > * {
+    margin: 1%;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+
+  /* FOOTER */
+
+  .contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    font-size: 1.5em;
+  }
+
+  .contactcontainer > * {
+    margin: 0;
+  }
+
+  #name,
+  #email,
+  #verification,
+  #message {
+    width: 50vh;
+    height: 3em;
+  }
+
+  #submitbtn {
+    width: 50%;
+    height: 4em;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: var(--white);
+  }
+}
+
+/*
+  LAPTOP MEDIA QUERIES
+*/
+
+@media only screen and (min-height: 768px) and (min-width: 1366px) {
+  .navelements {
+    font-size: 1.5em;
+  }
 }

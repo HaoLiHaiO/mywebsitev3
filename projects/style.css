@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightcolor: #ffc845;
+  --darkcolor: #000000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+
+  --titlesweight: 500;
+  --descriptionssizes: 0.7em;
+  --descriptionsweight: 100;
+  --maintextsize: 1em;
+  --maintextweight: 400;
+}
+
+body {
+  color: var(--lightcolor);
+  background-color: var(--darkcolor);
+}
+
+body.light {
+  color: var(--darkcolor);
+  background-color: var(--lightcolor);
+}
+
+header {
+  height: 10vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--lightcolor);
+}
+
+nav.light {
+  border-bottom: 1px solid var(--darkcolor);
+}
+
+.links {
+  text-decoration: none;
+  color: var(--lightcolor);
+}
+
+.links.light {
+  color: var(--darkcolor);
+}
+
+.iconwrapper {
+  height: 100%;
+  cursor: pointer;
+}
+
+#left {
+  padding-left: 1em;
+}
+
+#right {
+  padding-right: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  height: 90vh;
+  padding: 10%;
+}
+
+/*
+.thumbnails {
+  border-radius: 20px;
+  overflow: hidden;
+}
+*/
+
+.thumbnails:hover {
+  cursor: pointer;
+}
+
+.thumbnailpics {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  border-radius: 20px;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+#construction {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+/*
+.descriptions {
+  font-size: 0.5rem;
+  text-align: center;
+}
+*/
+
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 8vh;
+  }
+
+  nav > * {
+    margin-top: 2%;
+  }
+
+  main {
+    height: 90vh;
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    gap: 2em;
+  }
+
+  .thumbnails {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .thumbnails:hover {
+    transform: scale(1.7);
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
